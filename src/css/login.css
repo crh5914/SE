@@ -27,22 +27,23 @@ body {
 
 .screen {
   position: relative;
-  background: #FFFFFF;
+  background: #003470;
   margin: 0 auto;
   width: 100%;
-  max-width: 320px;
-  min-width: 295px;
+  max-width: 450px;
+  min-width: 300px;
   height: 100%;
-  max-height: 515px;
+  max-height: 640px;
   min-height: 480px;
 }
 
 .logo {
   display: block;
   position: relative;
-  width: 100%;
+  width: 35%;
   margin:  0 auto;
-  padding-top: 10px;
+  padding-top: 10%;
+
 }
 
 .small {
@@ -54,7 +55,7 @@ label.small:hover { color:hsl(0, 0%, 50%) }
 
 .large {
 	
-  color: #000000;
+  color: #FFFFFF;
   font-size: 1.3em;
   line-height: 1em;
   font-weight: 500;
@@ -78,7 +79,7 @@ label.small:hover { color:hsl(0, 0%, 50%) }
   bottom: 0;
   width: 100%;
   padding: 0 1.5em 1.5em;
-
+}
   input[type='text'],
   input[type='password'] {
     width: 100%;
@@ -103,8 +104,7 @@ label.small:hover { color:hsl(0, 0%, 50%) }
     border: 0;
     height: 2em;
     color: #fff;
-    font-family: Georgia, serif;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 700;
     padding: 0 0.5em;
     
