@@ -103,6 +103,7 @@ label.small:hover { color:hsl(0, 0%, 50%) }
     border-radius: 3px;
     border: 0;
     height: 2em;
+    width: 100%;
     color: #fff;
     font-size: 1.4em;
     font-weight: 700;
