@@ -1,0 +1,25 @@
+
+{
+     "button":[
+       {
+           "name":"扫楼助手",
+           "type":"view",
+		   "url":"http://183.3.139.134:6464/app/#/login"
+       },
+	   {
+	        "name":"操作",
+			"sub_button":[
+			 {
+			   "name":"绑定",
+			   "type":"click",
+			   "key":"band"
+			 },
+			 {
+			   "name":"解除绑定",
+			   "type":"click",
+			   "key":"unband"
+			 }
+			]
+	   }
+	   ]
+}

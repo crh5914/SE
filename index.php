@@ -48,36 +48,34 @@ class wechatCallbackapiTest
             $toUsername = $postObj->ToUserName;
             $keyword = trim($postObj->Content);
             $time = time();
-            $textTpl = "<xml>
-                        <ToUserName><![CDATA[%s]]></ToUserName>
-                        <FromUserName><![CDATA[%s]]></FromUserName>
-                        <CreateTime>%s</CreateTime>
-                        <MsgType><![CDATA[%s]]></MsgType>
-                        <Content><![CDATA[%s]]></Content>
-                        <FuncFlag>0</FuncFlag>
-                        </xml>";
+			$picTpl	=  "<xml>
+							<ToUserName><![CDATA[$fromUsername]]></ToUserName>
+							<FromUserName><![CDATA[$toUsername]]></FromUserName>
+							<CreateTime>$time</CreateTime>
+							<MsgType><![CDATA[news]]></MsgType>
+							<ArticleCount>2</ArticleCount>
+							<Articles>
+								<item>
+									<Title><![CDATA[智能扫楼助手]]></Title> 
+									<Description><![CDATA[智能扫楼助手]]></Description>
+									<PicUrl><![CDATA[http://115.159.211.193/weichat/images/logo2.png]]></PicUrl>
+									<Url><![CDATA[http://115.159.211.193/weichat/test.php?openid=$fromUsername]]></Url>
+								</item>
+								<item>
+									<Title><![CDATA[智能扫楼助手]]></Title> 
+									<Description><![CDATA[智能扫楼助手]]></Description>
+									<PicUrl><![CDATA[http://115.159.211.193/weichat/images/logo2.png]]></PicUrl>
+									<Url><![CDATA[http://115.159.211.193/weichat/test.php?openid=$fromUsername]]></Url>
+								</item>
+							</Articles>
+						</xml>"; 
             if($keyword == "?" || $keyword == "？")
             {
                 $msgType = "text";
                 $contentStr = 'http://183.3.139.134:6464/app/#/login';
                 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
-                echo $resultStr;
+                echo $picTpl;
             }
-			$linkTpl = "<xml>
-						<ToUserName><![CDATA[%s]]></ToUserName>
-						<FromUserName><![CDATA[%s]]></FromUserName>
-						<CreateTime>%s</CreateTime>
-						<MsgType><![CDATA[link]]></MsgType>
-						<Title><![CDATA[database]]></Title>
-						<Description><![CDATA[manager system]]></Description>
-						<Url><![CDATA[http://115.159.211.193:8080/database/index.jsp]]></Url>
-						<MsgId>123456</MsgId>
-						</xml>";
-			if(trim($keyword)=='link'){
-				$responseStr = sprintf($linkTpl,$fromUsername,$toUsername,date("Y-m-d H:i:s",time()));
-				echo $responseStr;
-			}
-			
         }else{
             echo "";
             exit;
