@@ -1,0 +1,53 @@
+.mui-btn {
+	font-size: 16px;
+	padding: 8px;
+	margin: 3px;
+}
+
+h5.mui-content-padded {
+	margin-left: 3px;
+	margin-top: 20px !important;
+}
+
+h5.mui-content-padded:first-child {
+	margin-top: 12px !important;
+}
+
+.ui-alert {
+	text-align: center;
+	padding: 20px 10px;
+	font-size: 16px;
+}
+.haven_visit{
+    background: rgba(124, 191, 247, 0.7);
+}
+
+.green{
+    color:green;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: #ff9908;
+}
+.blue{
+    color: #1B9AF7;
+}
+.grey{
+	color:grey;
+}
+ table,tr,td
+ {
+  border: 1px solid grey;
+  text-align: center;
+  height: 30px;
+  }
+
+    
+label {
+    cursor: pointer;
+    padding: 6px 0px;
+        display: block;
+
+}
