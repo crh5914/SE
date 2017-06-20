@@ -30,11 +30,8 @@ body {
   background: #003470;
   margin: 0 auto;
   width: 100%;
-  max-width: 450px;
-  min-width: 300px;
   height: 100%;
-  max-height: 640px;
-  min-height: 480px;
+
 }
 
 .logo {
