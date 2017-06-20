@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/login.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+		<div class='screen'>
+			
+			<img class='logo' src='images/logo3.png' />
+	
+			<form action='' class='login cf'>
+
+				<p class='large' >智慧地产 扫楼助手</p>
+
+				<input type='text' placeholder='邮箱/用户名/验证手机' autofocus />
+
+				<input type='password' placeholder='密码' />
+
+				<a class='medium flo-l' href=''>忘记密码?</a>
+
+				<div class='flo-r cf'>
+					<input class='flo-l' type='checkbox' id='remember-me' />
+					<label class='medium flo-l' for='remember-me'>记住我</label>
+				</div>
+				<div class='signup-link flo-l clr-l'>
+				</div>
+				
+				<input  class='flo-r' type='submit'   value='登陆' />
+	
+				
+			</form>
+
+		</div>
+	</body>
+
+</html>
