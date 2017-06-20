@@ -3,8 +3,18 @@
      "button":[
        {
            "name":"扫楼助手",
-           "type":"view",
-		   "url":"http://183.3.139.134:6464/app/#/login"
+		   "sub_button":[
+		    {
+		    "name":"旧系统",
+            "type":"view",
+		    "url":"http://183.3.139.134:6464/app/#/login"
+		    },
+			{
+			"name":"新系统",
+			"type":"click",
+			"key":"login"
+			}
+		   ]
        },
 	   {
 	        "name":"操作",
